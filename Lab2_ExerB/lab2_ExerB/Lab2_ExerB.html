@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    <!--
+    Error 1 (Line 10): Incorrect closing tag </head>.
+    Error 2 (Line 20): Used <td> instead of <th>.
+    Error 3 (Line 32): Missing closing </td> tag.
+    Error 4 (Line 39): Label for="name" did not match input id="fullname".
+    Error 5 (Line 42): Radio buttons had different name attributes.
+    Error 6 (Line 44): Radio buttons had different name attributes.
+    Error 7 (Line 46): Label for="labs" did not match checkbox id="lab".
+    Error 8 (Line 49): Incorrect closing tag </from>.
+    Error 9 (Line 49): The border attribute on the table element is obsolete.
+    Error 10 (Line 49): Invalid colspan="3" value makes the table row too wide.
+    Error 11 (Line 49): &copy missing semicolon.
+    -->
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+<nav>
+    <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+</nav>
+<section id="results">
+    <h2>Feedback Summary</h2>
+    <table>
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Introduction to HTML</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2">Tables and Forms</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Semantic HTML</td><td>4.0</td>
+        </tr>
+    </table>
+</section>
+<section id="form">
+    <h2>Give Your Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="name"><br>
+        <label>Overall rating:</label><br>
+        <input type="radio" id="good" name="overallRating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="poor" name="overallRating" value="poor">
+        <label for="poor">Poor</label><br>
+        <input type="checkbox" id="lab" name="lab" value="yes">
+        <label for="lab">I attended all labs</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
