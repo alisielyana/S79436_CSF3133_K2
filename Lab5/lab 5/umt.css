@@ -1,0 +1,79 @@
+/* Warna latar belakang dan font utama */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bahagian Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0055a5;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+/* Kesan hover pada link */
+nav a:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+/* Kandungan Utama */
+section {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+/* Jarak dan susunan perenggan */
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Gaya Jadual (Table) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #999999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Bahagian Footer */
+footer {
+    background-color: #dddddd;
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
